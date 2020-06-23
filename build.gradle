@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+mainClassName = 'Main'
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    //Javalin dependency
+    compile 'io.javalin:javalin:3.9.0'
+    //Thymeleaf dependency
+    compile 'org.thymeleaf:thymeleaf:3.0.5.RELEASE'
+
+}

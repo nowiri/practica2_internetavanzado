@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign up!</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <style type="text/css">
+        .login-form {
+            width: 340px;
+            margin: 50px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-form">
+        <div class="text-center">
+            <h1>Nuevo usuario</h1>
+        </div>
+
+        <form action="/crearUsuario" method="post">
+
+            <div class="form-group">
+                <input type="text" class="form-control" name="Name" placeholder="Name" required="required">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" name="Username" placeholder="Username" required="required">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" name="Password" placeholder="Password" required="required">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
+            </div>
+    </div>
+
+</body>
+</html>
